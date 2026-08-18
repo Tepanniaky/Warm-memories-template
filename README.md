@@ -1,4 +1,4 @@
-# ❤️ Memories
+# Warm Memories
 
 Uma experiência web interativa para transformar momentos especiais em uma história navegável, com contador, carta animada, galeria, música opcional e um mapa de memórias.
 
@@ -91,7 +91,7 @@ music: {
 
 > Não publique músicas protegidas por direitos autorais sem autorização.
 
-## 🗺️ Como adicionar um lugar
+##  Como adicionar um lugar
 
 1. Abra o Google Maps.
 2. Escolha o local desejado.
@@ -100,13 +100,13 @@ music: {
 
 Se sua versão for pública, evite usar coordenadas de residências ou outros locais privados.
 
-## ▶️ Executando
+##  Executando
 
 Como o projeto utiliza apenas HTML, CSS e JavaScript, não é necessário instalar Node.js, npm ou banco de dados.
 
 Você pode abrir `index.html` diretamente no navegador. Para desenvolvimento, também pode usar uma extensão como **Live Server** no VS Code.
 
-## 🌐 Publicando com GitHub Pages
+##  Publicando com GitHub Pages
 
 No seu repositório:
 
@@ -118,7 +118,7 @@ No seu repositório:
 
 O GitHub fornecerá uma URL pública para sua página.
 
-## 📁 Estrutura
+##  Estrutura
 
 ```text
 memories/
