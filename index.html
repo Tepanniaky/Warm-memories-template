@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Uma experiência interativa para guardar e celebrar memórias especiais."
+  >
+
+  <title>Memories ❤️</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <!-- ==================================================
+       FUNDO
+  =================================================== -->
+
+  <div class="background-glow background-glow-one"></div>
+  <div class="background-glow background-glow-two"></div>
+
+
+  <!-- ==================================================
+       CABEÇALHO
+  =================================================== -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <span
+        class="badge"
+        id="homeBadge"
+      ></span>
+
+      <h1
+        class="hero-title"
+        id="homeTitle"
+      ></h1>
+
+      <p
+        class="hero-subtitle"
+        id="homeSubtitle"
+      ></p>
+
+
+      <!-- CONTADOR -->
+
+      <section class="counter-container">
+
+        <span
+          class="counter-label"
+          id="counterTitle"
+        ></span>
+
+        <div
+          class="counter"
+          id="loveCounter"
+        ></div>
+
+      </section>
+
+
+      <div class="hero-actions">
+
+        <button
+          class="primary-button"
+          id="openMapButton"
+          type="button"
+        >
+          Explorar nossas memórias
+        </button>
+
+
+        <button
+          class="secondary-button"
+          id="musicButton"
+          type="button"
+          hidden
+        >
+          ♫ Tocar música
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==================================================
+       GALERIA
+  =================================================== -->
+
+  <main>
+
+    <section class="section">
+
+      <div class="section-heading">
+
+        <span class="section-kicker">
+          Momentos
+        </span>
+
+        <h2>
+          Algumas memórias merecem ficar para sempre.
+        </h2>
+
+      </div>
+
+
+      <div class="gallery-wrapper">
+
+        <button
+          class="gallery-button gallery-button-left"
+          id="galleryPrevious"
+          aria-label="Foto anterior"
+        >
+          ‹
+        </button>
+
+
+        <div
+          class="gallery"
+          id="gallery"
+        ></div>
+
+
+        <button
+          class="gallery-button gallery-button-right"
+          id="galleryNext"
+          aria-label="Próxima foto"
+        >
+          ›
+        </button>
+
+      </div>
+
+
+      <div
+        class="gallery-dots"
+        id="galleryDots"
+      ></div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CARTA
+    =================================================== -->
+
+    <section class="section letter-section">
+
+      <div class="letter-card">
+
+        <span class="letter-heart">
+          ♥
+        </span>
+
+
+        <span class="section-kicker">
+          Para você
+        </span>
+
+
+        <h2
+          id="letterTitle"
+        ></h2>
+
+
+        <p
+          class="letter-text"
+          id="letterText"
+        ></p>
+
+
+        <span
+          class="typewriter-cursor"
+          id="typewriterCursor"
+        >
+          |
+        </span>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         MAPA CTA
+    =================================================== -->
+
+    <section class="section map-callout">
+
+      <div class="map-callout-content">
+
+        <span class="map-callout-icon">
+          ♥
+        </span>
+
+
+        <div>
+
+          <span class="section-kicker">
+            Nossa história pelo mundo
+          </span>
+
+
+          <h2>
+            Cada lugar guarda uma lembrança.
+          </h2>
+
+
+          <p>
+            Explore o mapa e descubra cada capítulo
+            dessa história.
+          </p>
+
+        </div>
+
+
+        <button
+          class="primary-button"
+          id="openMapButtonBottom"
+          type="button"
+        >
+          Abrir mapa
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ==================================================
+       MAPA EM TELA CHEIA
+  =================================================== -->
+
+  <div
+    class="map-overlay"
+    id="mapOverlay"
+    aria-hidden="true"
+  >
+
+    <button
+      class="map-close"
+      id="closeMapButton"
+      aria-label="Fechar mapa"
+    >
+      ×
+    </button>
+
+
+    <iframe
+      id="mapFrame"
+      title="Mapa das memórias"
+      data-src="map.html"
+    ></iframe>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       ÁUDIO
+  =================================================== -->
+
+  <audio
+    id="backgroundMusic"
+    loop
+  ></audio>
+
+
+
+  <!-- ==================================================
+       SCRIPTS
+  =================================================== -->
+
+  <script src="js/config.js"></script>
+
+  <script src="js/letter.js"></script>
+
+</body>
+
+</html>

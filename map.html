@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Mapa das Memórias ❤️
+  </title>
+
+
+  <!-- LEAFLET -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+
+  <!-- MARKER CLUSTER -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body class="map-page">
+
+
+  <!-- ==================================================
+       MAPA
+  =================================================== -->
+
+  <div
+    id="map"
+    class="memory-map"
+  ></div>
+
+
+
+  <!-- ==================================================
+       CABEÇALHO DO MAPA
+  =================================================== -->
+
+  <div class="map-header">
+
+    <span class="map-header-kicker">
+      ♥ Nossa história
+    </span>
+
+    <strong>
+      Clique nos corações
+    </strong>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       STORY
+  =================================================== -->
+
+  <div
+    class="story-overlay"
+    id="storyOverlay"
+  >
+
+    <button
+      class="story-close"
+      id="storyClose"
+      aria-label="Fechar memória"
+    >
+      ×
+    </button>
+
+
+    <button
+      class="story-navigation story-previous"
+      id="storyPrevious"
+      aria-label="Memória anterior"
+    >
+      ‹
+    </button>
+
+
+    <article class="story-card">
+
+      <div class="story-image-container">
+
+        <img
+          id="storyImage"
+          src=""
+          alt=""
+        >
+
+
+        <span
+          class="story-number"
+          id="storyNumber"
+        ></span>
+
+      </div>
+
+
+      <div class="story-content">
+
+        <span
+          class="story-date"
+          id="storyDate"
+        ></span>
+
+
+        <h1
+          id="storyTitle"
+        ></h1>
+
+
+        <p
+          id="storyDescription"
+        ></p>
+
+      </div>
+
+    </article>
+
+
+    <button
+      class="story-navigation story-next"
+      id="storyNext"
+      aria-label="Próxima memória"
+    >
+      ›
+    </button>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       FINAL
+  =================================================== -->
+
+  <div
+    class="final-overlay"
+    id="finalOverlay"
+  >
+
+    <article class="final-card">
+
+      <span class="final-heart">
+        ♥
+      </span>
+
+
+      <img
+        id="finalImage"
+        src=""
+        alt="Imagem final"
+      >
+
+
+      <h1
+        id="finalTitle"
+      ></h1>
+
+
+      <p
+        id="finalMessage"
+      ></p>
+
+
+      <div class="final-actions">
+
+        <button
+          class="primary-button"
+          id="restartStories"
+        >
+          Rever memórias
+        </button>
+
+
+        <button
+          class="secondary-button"
+          id="closeFinal"
+        >
+          Voltar ao mapa
+        </button>
+
+      </div>
+
+    </article>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       DEPENDÊNCIAS
+  =================================================== -->
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+
+
+  <script
+    src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+  ></script>
+
+
+  <!-- CONFIG PRIMEIRO -->
+
+  <script src="js/config.js"></script>
+
+
+  <!-- MAPA DEPOIS -->
+
+  <script src="js/map.js"></script>
+
+
+</body>
+
+</html>

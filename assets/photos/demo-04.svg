@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#151218"/>
+  <circle cx="600" cy="330" r="95" fill="#211c22"/>
+  <text x="600" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="110" fill="#e63961">♥</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#f8f5f6">Próximo capítulo</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#aaa2a6">Substitua este arquivo pela sua própria foto</text>
+</svg>
